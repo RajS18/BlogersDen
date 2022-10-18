@@ -1,5 +1,5 @@
 .container {
-  padding: 0 2rem;
+  padding: 0;
 }
 
 .main {
@@ -128,18 +128,36 @@
   }
 }
 
+.mainnav{
+  position: fixed;
+  background-color: #111;
+  width: 100vw;
+  opacity: .75;
+}
+.mainnav:hover{
+  opacity: .98;
+}
 .mainnav ul{
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 10px;
+
 }
  
 .mainnav ul li{
-  margin: 0 24px;
+  margin: 0 50px;
+  padding: 20px 70px;
   list-style: none;
   font-weight: bold;
   cursor: pointer;
-}  
+  border: #111 1px solid;
+}
+.mainnav ul li:hover{
+
+  color: aliceblue;
+  border: aliceblue solid 1px;
+}
+ 
 .main {
   min-height: 100vh;
   flex: 1;
@@ -148,5 +166,5 @@
   justify-content: center;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 3rem;
+  padding-top: 7rem;
 }
