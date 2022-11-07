@@ -1,7 +1,7 @@
 import React from 'react'
 import {useRouter} from 'next/router'
 
-const slug = () => {
+const Slug = () => {
     const router = useRouter();
     const {meta} = router.query;
     //Basic dynamic routing.
@@ -11,4 +11,4 @@ const slug = () => {
   )
 }
 
-export default slug
+export default Slug
