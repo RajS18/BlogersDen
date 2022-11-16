@@ -31,6 +31,7 @@ const Blogpost = (props) => {
             <div>- by {blog && blog.author}</div>
         </main>
     </div>;
+    
 }
                 // //Server side rendering
                 // export async function getServerSideProps(context) {

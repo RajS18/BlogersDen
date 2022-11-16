@@ -1,0 +1,11 @@
+.container {
+    margin: auto;
+    max-width: 45vw;
+}
+.subcontainer {
+    padding-top: 100px;
+    margin: auto;
+}
+.center {
+    text-align: center;
+}

@@ -1,9 +1,27 @@
-import React from 'react'
+import React from 'react';
+import styles from '../styles/About.module.css'
 
 const About = () => {
-  return (
-    <div>This is an About view</div>
-  )
-}
+    return <div className={styles.container}>
+      <div className={styles.subcontainer}>
+        <h1 className={styles.center}>About Us</h1>
+        <h2>Introduction</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, quidem? Minus, quas! Earum maxime dignissimos rem quisquam omnis voluptatem ab quis. Tempora iure iste asperiores dolores quia eligendi! Doloremque repellat repellendus deleniti est. Blanditiis officiis et explicabo dicta. Quod, blanditiis at similique enim deserunt labore nisi doloribus tempore nihil quam omnis magni ducimus natus sit vel, id reprehenderit nam non quo consectetur ipsa molestias nobis. </p>
+        <h2>Services Offered</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quis. Saepe, blanditiis harum cum excepturi maiores atque mollitia quas itaque qui, exercitationem id quaerat magnam repellat quia fugiat hic iure sit vitae officiis eligendi.</p>
+        <p>We offer the following services</p>
+        <ul>
+            <li>Service A</li>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quisquam exercitationem soluta, aliquid repudiandae magnam voluptate perferendis. Quasi, saepe maxime!</p>
+            <li>Service B</li>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus consequatur veniam perspiciatis ipsam. Tempore minus a ab repellat, ea ipsam.</p>
+            <li>Service C</li>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias quod et incidunt molestiae ipsam sunt nobis hic debitis at earum.</p>
+        </ul>
+        <h2>Contact us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos et animi harum assumenda necessitatibus explicabo nam, corporis deleniti, ab ad praesentium blanditiis iste saepe perferendis impedit architecto quia cupiditate? Accusantium est in inventore repellendus unde. Dolores labore deserunt corrupti fugiat ratione perspiciatis illo optio suscipit aliquid cumque nihil soluta earum, assumenda eligendi nulla sed molestias unde?</p>
+    </div>
+    </div>;
+};
 
-export default About
+export default About;
