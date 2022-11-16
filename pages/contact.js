@@ -7,18 +7,18 @@ const contact = () => {
   const [desc, setdesc] = useState('')
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log(phone, name, email, desc)
+    e.preventDefault()//avoid reloading
+    //console.log(phone, name, email, desc)
     const data = { phone, name, email, desc };
 
     fetch('http://localhost:3000/api/postcontact', {
-      method: 'POST', // or 'PUT'
+      method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(data),
     })
-      .then(response => response.text())
+      //.then(response => response.text())
       .then(data => {
         console.log('Success:', data);
         alert("Thanks for contacting us");
