@@ -7,28 +7,35 @@ import * as fs from 'fs';
 
 const Blog = (props) => {
 
-  console.log(props);
+    console.log(props);
 
-  const [blogs, setBlogs] = useState(props.allBlogs);
-  // useEffect(() => {
-  //   //Client Side rendering
-  //   fetch('http://localhost:3000/api/blogs').then((a) => {
-  //     return a.json();
-  //   })
-  //     .then((parsed) => {
-  //       console.log(parsed)
-  //       setBlogs(parsed)
-  //     })
-  // }, [])
+    const [blogs, setBlogs] = useState(props.allBlogs);
+    // useEffect(() => {
+    //   //Client Side rendering
+    //   fetch('http://localhost:3000/api/blogs').then((a) => {
+    //     return a.json();
+    //   })
+    //     .then((parsed) => {
+    //       console.log(parsed)
+    //       setBlogs(parsed)
+    //     })
+    // }, [])
 
-  return <div className={styles.container}>
+    return <div className={styles.container}>
         <main className={styles.main}>
+            <h1>All Popular Blogposts</h1>
             {blogs.map((blogitem) => {
                 return <div key={blogitem.slug} className={styles.blogs}>
                     <Link href={`/blogpost/${blogitem.slug}`}>
                         <h3 className={styles.blogItemh3}>{blogitem.title}</h3></Link>
                     <p className={styles.blogItemp}>{blogitem.metaDescription.substr(0, 140)}...</p>
-                    <h5>By: {blogitem.author}</h5>
+                    <span className={styles.butn}>
+                        <div className={styles.btwn}>
+                            <div>By: {blogitem.author}</div>
+                            <Link href={`/blogpost/${blogitem.slug}`}><div><button>Read more</button></div></Link>
+                        </div>
+                    </span>
+
                 </div>
             })}
         </main>
@@ -36,15 +43,15 @@ const Blog = (props) => {
 }
 //The following function runs at server side:
 //Server side rendering
-                // export async function getServerSideProps(context) {
-                // let data = await fetch('http://localhost:3000/api/blogs')
-                // let allBlogs = await data.json()
+// export async function getServerSideProps(context) {
+// let data = await fetch('http://localhost:3000/api/blogs')
+// let allBlogs = await data.json()
 
-                // return {
-                //     props: { allBlogs }, // will be passed to the page component as props
+// return {
+//     props: { allBlogs }, // will be passed to the page component as props
 
-                // }
-                // }
+// }
+// }
 
 // This code is for Static site generation. here we will generate this page before even it is requested as a bundle in some directory called out at server.
 //Whenever this request is called for, severs or rather we should call it CDN where a static site is transfered to when built by the server 

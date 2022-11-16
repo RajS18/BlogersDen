@@ -6,14 +6,13 @@
     padding-top: 100px;
     margin: auto;
 }
-.textareacontainer{
-    padding-top: 15px;
-    width: 100%;
-}
+
 .mb3 {
     margin-bottom: 21px;
+    display:flex;
+    flex-direction: column;
 }
 
 .formlabel {
-    margin: 0px 14px;
+    margin: 10px 1px;
 }

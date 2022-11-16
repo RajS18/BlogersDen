@@ -66,7 +66,7 @@ const contact = () => {
           </div>
           <div className={styles.mb3}>
             <label htmlFor="desc">Elaborate your concern</label>
-            <div className={styles.textareacontainer}><textarea value={desc} onChange={handleChange} className="form-control" placeholder="Write your concern here" name='desc' id="desc" /></div>
+            <div><textarea value={desc} onChange={handleChange} className="form-control" placeholder="Write your concern here" name='desc' id="desc" /></div>
           </div>
           <button type="submit" className="btn btn-primary">Submit</button>
         </form>

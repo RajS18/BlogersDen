@@ -8,9 +8,21 @@
     justify-content: flex-start;
     padding-top: 7rem;
   }
+  .blogs{
+    margin: 10px 0;
+    border: 1px white solid;
+    padding: 2%;
+    border-radius: 20px;
+  }
   .blogs h2{
     color: chartreuse;
   }
   .blogs h3:hover{
     cursor: pointer;
+  }
+  .butn{
+    display: inline-flex;
+  }
+  .btwn{
+    justify-content: space-between;
   }

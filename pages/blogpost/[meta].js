@@ -21,6 +21,7 @@ const Blogpost = (props) => {
     // }, [router.isReady])
     // console.log(blog);
     return <div className={styles.container}>
+
         <main className={styles.main}>
             <h1>{blog && blog.title}</h1>
             <hr />
