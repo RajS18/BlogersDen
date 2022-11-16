@@ -151,10 +151,12 @@
   font-weight: bold;
   cursor: pointer;
   border: #111 1px solid;
+  border-radius: 12px;
 }
 .mainnav ul li:hover{
 
-  color: aliceblue;
+  color: black;
+  background-color: #29f300;
   border: aliceblue solid 1px;
 }
  
